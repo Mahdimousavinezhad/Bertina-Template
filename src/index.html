@@ -14,7 +14,940 @@
   </head>
   <body>
     <!-- Start of header section -->
-    <header></header>
+    <div
+      class="max-md:hidden h-13 lg:flex lg:justify-center bg-linear-90 from-violet-200/75 via-rose-100 to-violet-100/75"
+    >
+      <div
+        class="container lg:mx-auto py-2 px-5 lg:px-2 xl:px-25 lg:flex lg:items-center lg:justify-between"
+      >
+        <div class="flex items-center gap-x-3 2xl:ps-45 xl:ps-20 lg:ps-10">
+          <button
+            class="px-3 text-base bg-violet-400/25 text-lightviolet rounded-lg font-bold"
+          >
+            <p class="animate-pulse py-0.5">خبر ویژه</p>
+          </button>
+          <p class="text-lightviolet font-extrabold text-2xl">></p>
+          <p class="font-medium text-sm text-lightviolet animate-bounce">
+            بیش از دیگران سایت جدید برتینا را ببینید...
+          </p>
+        </div>
+        <div class="flex items-center gap-4 max-lg:hidden">
+          <div class="gap-1 text-lightviolet flex items-center cursor-pointer">
+            <span
+              ><img
+                src="./assets/svg/document-text-svgrepo-com.svg"
+                alt="Document"
+                class="w-5"
+            /></span>
+            <span>وبلاگ</span>
+          </div>
+          <div class="gap-1 text-lightviolet flex items-center cursor-pointer">
+            <span
+              ><img
+                src="./assets/svg/user-svgrepo-com.svg"
+                alt="User"
+                class="w-5"
+            /></span>
+            <span>ورود/ثبت نام</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <nav class="shadow-lg">
+        <div
+          class="container m-auto px-5 lg:px-2 xl:px-25 py-5 flex justify-between items-center"
+        >
+          <div class="flex flex-col gap-1 lg:hidden">
+            <div class="w-7 h-1 bg-black rounded-full"></div>
+            <div class="w-7 h-1 bg-black rounded-full"></div>
+            <div class="w-7 h-1 bg-black rounded-full"></div>
+          </div>
+          <div>
+            <img
+              class="sm:w-15 md:w-17 lg:hidden"
+              src="./assets/images/logo.webp"
+              alt="Logo"
+            />
+          </div>
+          <div class="max-lg:hidden relative flex items-center gap-5 px-10">
+            <img
+              class="sm:w-15 md:w-17"
+              src="./assets/images/logo.webp"
+              alt="Logo"
+            />
+            <ul class="flex items-center gap-4 shrink-0">
+              <li class="group">
+                <div class="flex items-center">
+                  <a href="#" class="hover:text-lightviolet transition-colors"
+                    >هاست</a
+                  >
+                  <span
+                    ><img
+                      src="./assets/svg/arrow-down-svgrepo-com.svg"
+                      alt="Arrow"
+                      class="w-5"
+                  /></span>
+                </div>
+
+                <div
+                  class="hidden group-hover:block p-10 absolute top-10 right-10 w-12/12"
+                >
+                  <ul
+                    class="py-10 px-15 shadow-lg rounded-xl h-fit flex justify-between flex-wrap gap-4"
+                  >
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img src="./assets/images/linux.webp" alt="Linux" />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          هاست لینوکس
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          جهت استفاده از وردپرس و زبان php
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/wordpress_1-32x32.webp"
+                        alt="Wordpress"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          هاست وردپرس
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          سرویس هاست با بهینه سازی اختصاصی وردپرس
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/woocommerce.webp"
+                        alt="Woocommerce"
+                      />
+                      <div class="relative">
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          هاست ووکامرس
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          مخصوص ووکامرس و دیگر پلتفرم های فروشگاهی
+                        </p>
+                        <p
+                          class="bg-amber-400 w-13 h-7 text-center rounded-lg absolute -top-5 left-10"
+                        >
+                          جدید
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img src="./assets/images/windows.webp" alt="Windows" />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          هاست ویندوز
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          مناسب برای زبان های ASP و .NET
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img src="./assets/images/email.webp" alt="Email" />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          هاست ایمیل
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          سرویس میزبانی ایمیل با SmarterEmail
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img src="./assets/images/sponser-host.webp" alt="Host" />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          نمایندگی هاست
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          ارائه سرویس های هاست به مشتریان خود
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group">
+                <div class="flex items-center">
+                  <a href="#" class="hover:text-lightviolet transition-colors"
+                    >ثبت دامنه</a
+                  >
+                  <span
+                    ><img
+                      src="./assets/svg/arrow-down-svgrepo-com.svg"
+                      alt="Arrow"
+                      class="w-5"
+                  /></span>
+                </div>
+
+                <div
+                  class="hidden group-hover:block p-10 absolute top-10 right-10 w-12/12"
+                >
+                  <div
+                    class="py-10 px-20 shadow-lg rounded-xl h-fit flex 2xl:justify-between lg:justify-center flex-wrap gap-4"
+                  >
+                    <div class="flex justify-center flex-col gap-6">
+                      <h2 class="text-xl font-semibold">
+                        دامنه دلخواه خود را به راحتی ثبت کنید
+                      </h2>
+                      <p
+                        class="text-justify w-100 leading-6 text-sm text-slate-700"
+                      >
+                        دامنه خود را با آسودگی خاطر و به راحتی در برتینا ثبت
+                        نمایید. شرکت برتینا با استفاده از اعتبار بین‌المللی خود
+                        و همکاری با بهترین و معتبرترین رجیسترارهای خارجی در
+                        ارائه خدمات مربوط به ثبت/تمدید/انتقال دامنه‌های
+                        بین‌المللی پیشرو می‌باشد. شرکت برتینا امکان ثبت تمامی
+                        پسوند‌های رایج و خاص را با بهترین قیمت و پشتیبانی کامل
+                        ارائه می‌نماید.
+                      </p>
+                      <div>
+                        <a
+                          href="#"
+                          class="inline-block py-1 px-3 text-sm border border-slate-600 rounded-lg font-semibold hover:text-lightviolet transition-colors"
+                          >خرید دامنه</a
+                        >
+                        <a
+                          href="#"
+                          class="inline-block py-1 px-3 text-sm border border-slate-600 rounded-lg font-semibold hover:text-lightviolet transition-colors"
+                          >خرید دامنه .com</a
+                        >
+                        <a
+                          href="#"
+                          class="inline-block py-1 px-3 text-sm border border-slate-600 rounded-lg font-semibold hover:text-lightviolet transition-colors"
+                          >خرید دامنه .ir</a
+                        >
+                      </div>
+                    </div>
+                    <div class="flex items-center flex-col gap-6">
+                      <div
+                        class="flex items-center gap-x-2 shadow rounded-lg py-3 px-5"
+                      >
+                        <div>
+                          <button
+                            class="bg-lightviolet py-2 px-3 rounded-lg outline-0 text-white flex items-center gap-x-1 cursor-pointer transition-all hover:scale-110 hover:bg-lightviolet/75"
+                          >
+                            <img
+                              class="w-5"
+                              src="./assets/svg/search-svgrepo-com.svg"
+                              alt="Search Icon"
+                            />
+                            <span>جستجو</span>
+                          </button>
+                        </div>
+                        <input
+                          class="w-75 outline-0"
+                          type="text"
+                          placeholder="برای ثبت،دامنه با پسوند مورد نظر را وارد کنید"
+                        />
+                        <h2 class="font-bold">.WWW</h2>
+                      </div>
+                      <div class="flex items-center gap-13">
+                        <div>
+                          <span class="text-lightviolet">Info</span>
+                          <span>۷۰۱,۰۰۰</span>
+                        </div>
+                        <div>
+                          <span class="text-lightviolet">org</span>
+                          <span>۱۵۶,۰۰۰</span>
+                        </div>
+                        <div>
+                          <span class="text-lightviolet">net</span>
+                          <span>۱,۸۲۴,۰۰۰</span>
+                        </div>
+                        <div>
+                          <span>com</span>
+                          <span>۱,۲۲۰,۰۰۰</span>
+                        </div>
+                      </div>
+                      <div>
+                        <img
+                          class="w-[500px] rounded-xl"
+                          src="./assets/images/banner-menu-domain-1024x244.webp"
+                          alt="menu image"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="group">
+                <div class="flex items-center">
+                  <a href="#" class="hover:text-lightviolet transition-colors"
+                    >گوگل ادز</a
+                  >
+                  <span
+                    ><img
+                      src="./assets/svg/arrow-down-svgrepo-com.svg"
+                      alt="Arrow"
+                      class="w-5"
+                  /></span>
+                </div>
+
+                <div
+                  class="hidden group-hover:block p-10 absolute top-10 right-10 w-12/12"
+                >
+                  <ul
+                    class="py-10 px-15 shadow-lg rounded-xl h-fit flex justify-between flex-wrap gap-4"
+                  >
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/ads-google.webp"
+                        alt="ads-google"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          تبلیغات در گوگل
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          لینک اول صفحه نتایج جستجو
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/banner-ads-google.webp"
+                        alt="banner-ads-google"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          تبلیغات بنری گوگل
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          نمایش در اپلیکیشن و سایت های پربازدید
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img src="./assets/images/apps-ads.webp" alt="apps-ads" />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          تبلیغات نصب اپلیکیشن
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          نمایش تبلیغ در اپلیکیشن ها
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/video-ads.webp"
+                        alt="video-ads"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          تبلیغات ویدئویی
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          نمایش تبلیغ شما در ویدیوها
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/special-acc-google.webp"
+                        alt="special-acc-google"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          اکانت اختصاصی گوگل
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          دسترسی مستقیم به اکانت خود
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/google-ads-hand.webp"
+                        alt="google-ads-hand"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          نمایندگی گوگل ادز
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          نماینده تبلیغات در گوگل
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group">
+                <div class="flex items-center">
+                  <a href="#" class="hover:text-lightviolet transition-colors"
+                    >سرور</a
+                  >
+                  <span
+                    ><img
+                      src="./assets/svg/arrow-down-svgrepo-com.svg"
+                      alt="Arrow"
+                      class="w-5"
+                  /></span>
+                </div>
+
+                <div
+                  class="hidden group-hover:block p-10 absolute top-10 right-10 w-12/12"
+                >
+                  <ul
+                    class="py-10 px-15 shadow-lg rounded-xl h-fit flex justify-between flex-wrap gap-4"
+                  >
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/svg/iran-2.svg"
+                        alt="iran"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          سرور مجازی ایران
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          میزبانی شده در دیتاسنتر اختصاصی برتینا
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/svg/germany2_1.svg"
+                        alt="germany"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          سرور مجازی آلمان
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          میزبانی شده در دیتاسنتر Hetzner آلمان
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/svg/france2_1.svg"
+                        alt="france"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          سرور مجازی فرانسه
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          میزبانی شده در دیتاسنتر Ovh فرانسه
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/server.webp"
+                        alt="Server"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          سرور اختصاصی آلمان
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          سرعت بالا و سخت افزار قوی
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/server.webp"
+                        alt="Server"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          سرور اختصاصی ایران
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          سخت افزار اختصاصی و پیمگ مناسب
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/server.webp"
+                        alt="Server"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          میزبانی سرور (کلوکیشن)
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          دیتاسنتر امن برتینا با اینترنت پایدار
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="hover:text-lightviolet transition-colors"
+                  >ایمیل سازمانی</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-lightviolet transition-colors"
+                  >گواهی SSL</a
+                >
+              </li>
+              <li class="group">
+                <div class="flex items-center">
+                  <a href="#" class="hover:text-lightviolet transition-colors"
+                    >دیگر خدمات</a
+                  >
+                  <span
+                    ><img
+                      src="./assets/svg/arrow-down-svgrepo-com.svg"
+                      alt="Arrow"
+                      class="w-5"
+                  /></span>
+                </div>
+
+                <div
+                  class="hidden group-hover:block p-10 absolute top-10 right-10 w-12/12"
+                >
+                  <ul
+                    class="py-10 px-15 shadow-lg rounded-xl h-fit flex justify-between flex-wrap gap-4"
+                  >
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/ssl.webp"
+                        alt="SSL"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          گواهینامه SSL
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          ارتباطی امن بین کاربر و سرور
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/email.webp"
+                        alt="Email"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          میزبانی ایمیل
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          سرویس میزبانی ایمیل با Smarteremail
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/server.webp"
+                        alt="server"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          خدمات مدیریت سرور
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          مدیریت سرور ، وبسایت و اپلیکیشن
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/design.webp"
+                        alt="design"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          طراحی سایت
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          طراحی وبسایت خود را به ما بسپارید
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/svg/iran-cloud-server.svg"
+                        alt="Server"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          سرور ابری ایران
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          خدمات دیتاسنتر ابری و سرور مجازی ابری
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/svg/cloud-host.svg"
+                        alt="Host"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          هاست ابری
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          مبتنی بر تکنولوژی و ذخیره سازی ابری
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group">
+                <div class="flex items-center">
+                  <a href="#" class="hover:text-lightviolet transition-colors"
+                    >درباره ما</a
+                  >
+                  <span
+                    ><img
+                      src="./assets/svg/arrow-down-svgrepo-com.svg"
+                      alt="Arrow"
+                      class="w-5"
+                  /></span>
+                </div>
+
+                <div
+                  class="hidden group-hover:block p-10 absolute top-10 right-10 w-12/12"
+                >
+                  <ul
+                    class="py-10 px-15 shadow-lg rounded-xl h-fit flex justify-between flex-wrap gap-4"
+                  >
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/about-us-32x32.webp"
+                        alt="about us"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          درباره ما
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          همه چیز درباره برتینا
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/contact-us.webp"
+                        alt="Contact us"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          تماس با ما
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          راه های ارتباطی با برتینا
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/weblog.webp"
+                        alt="weblog"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          وبلاگ
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          جهت مشاهده وبلاگ برتینا کلیک کنید
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/hire.webp"
+                        alt="hire"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          استخدام در برتینا
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          فرصت های شغلی ارائه شده در برتینا
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/identity-number.webp"
+                        alt="identity-number"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          شماره حساب ها
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          روش های پرداخت و شماره حساب ها
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/user-pannel.webp"
+                        alt="user-pannel"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          ناحیه کاربری برتینا
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          ورود به ناحیه کاربری
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/verified.webp"
+                        alt="verified"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          مجوزها و تاییدیه ها
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          گواهی ها، تقدیرنامه ها و افتخارات
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/offers.webp"
+                        alt="offers"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          تخفیف ها
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          جهت مشاهده آخرین تخفیفات
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-3 w-60 group/item cursor-pointer"
+                    >
+                      <img
+                        src="./assets/images/special-question.webp"
+                        alt="special-question"
+                        class="w-10"
+                      />
+                      <div>
+                        <h4
+                          class="font-semibold transition-all group-hover/item:text-lightviolet"
+                        >
+                          سوالات متداول FAQ
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                          پرسش و پاسخ های برتینا
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="md:flex lg:hidden hidden items-center gap-4 max-lg:hidden"
+          >
+            <div class="gap-1 flex items-center cursor-pointer">
+              <span
+                ><img
+                  src="./assets/svg/document-text-svgrepo-com (1).svg"
+                  alt="Document"
+                  class="w-6"
+              /></span>
+              <span>وبلاگ</span>
+            </div>
+            <div class="gap-1 flex items-center cursor-pointer">
+              <span
+                ><img
+                  src="./assets/svg/user-svgrepo-com (1).svg"
+                  alt="User"
+                  class="w-6"
+              /></span>
+              <span>ورود/ثبت نام</span>
+            </div>
+          </div>
+          <div class="lg:flex items-center gap-4 hidden max-md:flex">
+            <img
+              src="./assets/svg/message-square-svgrepo-com.svg"
+              alt="Meesage"
+              class="w-7"
+            />
+            <div class="flex items-center gap-2">
+              <h2 class="font-semibold text-xl max-md:hidden">۰۲۱-۶۱۰۶۴</h2>
+              <img
+                src="./assets/svg/phone-svgrepo-com.svg"
+                alt="Phone"
+                class="w-7"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- End of header section -->
 
     <!-- Satrt of Main section -->
