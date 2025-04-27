@@ -7,4 +7,18 @@
   --color-midnight: #212121;
 
   --shadow-card: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  --animate-banner: banner 3s ease-in-out infinite;
+
+  @keyframes banner {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 }
