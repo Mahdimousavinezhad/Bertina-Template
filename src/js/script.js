@@ -1,16 +1,19 @@
 const downIcon = document.getElementById("open_resumes");
 const resumeImage = document.getElementById("resume_image");
-const toggle1 = document.getElementById("toggle1");
-const toggle2 = document.getElementById("toggle2");
-const toggle3 = document.getElementById("toggle3");
-const toggle4 = document.getElementById("toggle4");
-const toggle5 = document.getElementById("toggle5");
 
 downIcon.addEventListener("click", () => {
   resumeImage.classList.remove("hidden");
   resumeImage.classList.add("grid");
   downIcon.classList.add("hidden");
 });
+
+// Accordion section
+
+const toggle1 = document.getElementById("toggle1");
+const toggle2 = document.getElementById("toggle2");
+const toggle3 = document.getElementById("toggle3");
+const toggle4 = document.getElementById("toggle4");
+const toggle5 = document.getElementById("toggle5");
 
 toggle1.addEventListener("click", () => {
   const item1 = document.getElementById("item1");

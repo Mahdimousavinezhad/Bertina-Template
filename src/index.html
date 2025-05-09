@@ -10,7 +10,52 @@
       برتینا بزرگ‌ترین ارائه دهنده خدمات هاستینگ و دامنه و کلیک گوگل در ایران
     </title>
     <link rel="icon" href="./assets/images/logo.webp" />
-    <link rel="stylesheet" href="./styles/build.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* .mySwiper2 {
+        width: 600px;
+        min-height: 350px;
+      } */
+
+      /* @media screen and (max-width: 640px) {
+        .mySwiper2 {
+          width: 400px;
+          min-height: 350px;
+        }
+      }
+
+      @media screen and (max-width: 430px) {
+        .mySwiper2 {
+          width: 250px;
+          min-height: 350px;
+        }
+      } */
+    </style>
   </head>
   <body>
     <!-- Start of header section -->
@@ -1421,51 +1466,126 @@
             مورد اعتماد مشتریان هستیم
           </h1>
           <div
-            class="flex flex-col justify-center items-center gap-7 md:flex-row md:justify-between"
+            class="flex flex-col justify-center items-center gap-7 lg:flex-row lg:justify-between"
           >
             <div>
-              <img src="./assets/images/ghj-1024x576.webp" alt="Chart" />
+              <img
+                src="./assets/images/ghj-1024x576.webp"
+                alt="Chart"
+                class="flex-1"
+              />
             </div>
-            <div class="md:w-fit flex flex-col justify-center items-center">
+            <div class="shadow shadow-sky-300/75 rounded-2xl">
               <div
-                class="relative group shadow-card rounded-2xl text-center py-3 px-8 flex flex-col justify-center items-center bg-white"
+                class="swiper mySwiper2 rounded-2xl !w-[270px] sm:!w-[250px] md:!w-[350px] lg:!w-[500px]"
               >
-                <img
-                  src="./assets/images/user-pannel.webp"
-                  alt="User"
-                  class="my-3 w-1/12"
-                />
-                <h1 class="text-lightviolet font-bold text-xl mb-1">
-                  احمد رضا طالبی
-                </h1>
-                <h3 class="text-lg text-gray-500 mb-5">
-                  شرکت پرشیان فولاد (هلدینگ پرشیان)
-                </h3>
-                <p class="text-center font-semibold leading-6">
-                  احمد رضا طالبی: سرپرست فن‌آوری اطلاعات شرکت پرشیان فولاد
-                  (هلدینگ پرشیان) : در طول این یک دهه همکاری با شرکت برتینا و
-                  استفاده از بیشتر سرویس‌های برتینا، اعم از دامین و میزبانی‌ وب،
-                  هاست و ایمیل سرویس‌دهی خوب، مشاوره تخصصی و پشتیبانی عالی را
-                  تجربه کرده‌ام. سرویس‌های این مجموعه با ویژگی‌ها و امکانات
-                  بسیار خوبی ارائه می‌شوند که مناسب و برطرف‌کننده نیاز همه نوع
-                  کسب‌وکاری است.
-                </p>
-                <span
-                  class="text-lightviolet border-2 border-lightviolet rounded-full py-1 px-3 font-bold text-2xl cursor-pointer absolute left-0 hidden group-hover:block"
-                  >></span
-                >
-                <span
-                  class="text-lightviolet border-2 border-lightviolet rounded-full py-1 px-3 font-bold text-2xl cursor-pointer absolute right-0 hidden group-hover:block"
-                  ><</span
-                >
-              </div>
-              <div class="flex items-center gap-3 md:gap-4 lg:gap-5 mt-4">
-                <div class="border-2 rounded-full p-1"></div>
-                <div class="border-2 rounded-full p-1"></div>
-                <div class="border-2 rounded-full p-1"></div>
-                <div class="border-2 rounded-full p-1 bg-black"></div>
-                <div class="border-2 rounded-full p-1"></div>
-                <div class="border-2 rounded-full p-1"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="text-center py-3 px-8 flex flex-col justify-center items-center bg-white"
+                    >
+                      <img
+                        src="./assets/images/user-pannel.webp"
+                        alt="User"
+                        class="my-3 w-1/12"
+                      />
+                      <h1 class="text-lightviolet font-bold text-xl mb-1">
+                        احمد رضا طالبی
+                      </h1>
+                      <h3 class="text-lg text-gray-500 mb-5">
+                        شرکت پرشیان فولاد (هلدینگ پرشیان)
+                      </h3>
+                      <p class="text-center leading-6">
+                        احمد رضا طالبی: سرپرست فن‌آوری اطلاعات شرکت پرشیان فولاد
+                        (هلدینگ پرشیان) : در طول این یک دهه همکاری با شرکت
+                        برتینا و استفاده از بیشتر سرویس‌های برتینا، اعم از دامین
+                        و میزبانی‌ وب، هاست و ایمیل سرویس‌دهی خوب، مشاوره تخصصی
+                        و پشتیبانی عالی را تجربه کرده‌ام. سرویس‌های این مجموعه
+                        با ویژگی‌ها و امکانات بسیار خوبی ارائه می‌شوند که مناسب
+                        و برطرف‌کننده نیاز همه نوع کسب‌وکاری است.
+                      </p>
+                      <span
+                        class="text-lightviolet border-2 border-lightviolet rounded-full py-1 px-3 font-bold text-2xl cursor-pointer absolute left-0 hidden group-hover:block"
+                        >></span
+                      >
+                      <span
+                        class="text-lightviolet border-2 border-lightviolet rounded-full py-1 px-3 font-bold text-2xl cursor-pointer absolute right-0 hidden group-hover:block"
+                        ><</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="text-center py-3 px-8 flex flex-col justify-center items-center bg-white"
+                    >
+                      <img
+                        src="./assets/images/user-pannel.webp"
+                        alt="User"
+                        class="my-3 w-1/12"
+                      />
+                      <h1 class="text-lightviolet font-bold text-xl mb-1">
+                        احمد رضا طالبی
+                      </h1>
+                      <h3 class="text-lg text-gray-500 mb-5">
+                        شرکت پرشیان فولاد (هلدینگ پرشیان)
+                      </h3>
+                      <p class="text-center leading-6">
+                        احمد رضا طالبی: سرپرست فن‌آوری اطلاعات شرکت پرشیان فولاد
+                        (هلدینگ پرشیان) : در طول این یک دهه همکاری با شرکت
+                        برتینا و استفاده از بیشتر سرویس‌های برتینا، اعم از دامین
+                        و میزبانی‌ وب، هاست و ایمیل سرویس‌دهی خوب، مشاوره تخصصی
+                        و پشتیبانی عالی را تجربه کرده‌ام. سرویس‌های این مجموعه
+                        با ویژگی‌ها و امکانات بسیار خوبی ارائه می‌شوند که مناسب
+                        و برطرف‌کننده نیاز همه نوع کسب‌وکاری است.
+                      </p>
+                      <span
+                        class="text-lightviolet border-2 border-lightviolet rounded-full py-1 px-3 font-bold text-2xl cursor-pointer absolute left-0 hidden group-hover:block"
+                        >></span
+                      >
+                      <span
+                        class="text-lightviolet border-2 border-lightviolet rounded-full py-1 px-3 font-bold text-2xl cursor-pointer absolute right-0 hidden group-hover:block"
+                        ><</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="text-center py-3 px-8 flex flex-col justify-center items-center bg-white"
+                    >
+                      <img
+                        src="./assets/images/user-pannel.webp"
+                        alt="User"
+                        class="my-3 w-1/12"
+                      />
+                      <h1 class="text-lightviolet font-bold text-xl mb-1">
+                        احمد رضا طالبی
+                      </h1>
+                      <h3 class="text-lg text-gray-500 mb-5">
+                        شرکت پرشیان فولاد (هلدینگ پرشیان)
+                      </h3>
+                      <p class="text-center leading-6">
+                        احمد رضا طالبی: سرپرست فن‌آوری اطلاعات شرکت پرشیان فولاد
+                        (هلدینگ پرشیان) : در طول این یک دهه همکاری با شرکت
+                        برتینا و استفاده از بیشتر سرویس‌های برتینا، اعم از دامین
+                        و میزبانی‌ وب، هاست و ایمیل سرویس‌دهی خوب، مشاوره تخصصی
+                        و پشتیبانی عالی را تجربه کرده‌ام. سرویس‌های این مجموعه
+                        با ویژگی‌ها و امکانات بسیار خوبی ارائه می‌شوند که مناسب
+                        و برطرف‌کننده نیاز همه نوع کسب‌وکاری است.
+                      </p>
+                      <span
+                        class="text-lightviolet border-2 border-lightviolet rounded-full py-1 px-3 font-bold text-2xl cursor-pointer absolute left-0 hidden group-hover:block"
+                        >></span
+                      >
+                      <span
+                        class="text-lightviolet border-2 border-lightviolet rounded-full py-1 px-3 font-bold text-2xl cursor-pointer absolute right-0 hidden group-hover:block"
+                        ><</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -1476,52 +1596,47 @@
           تعدادی از مشتریان ما در سال گذشته
         </h1>
         <div class="lg:hidden">
-          <div class="relative flex justify-evenly gap-10">
-            <img src="./assets/images/دانشگاه-شهید-بهشتی.webp" alt="Resume" />
-            <img src="./assets/images/دانشگاه-شریف.webp" alt="Resume" />
-            <img
-              src="./assets/images/دانشگاه-ازاد.webp"
-              alt="Resume"
-              class="hidden md:block"
-            />
-            <img
-              src="./assets/images/پاکبان.webp"
-              alt="Resume"
-              class="hidden md:block"
-            />
-            <img
-              src="./assets/images/پارس-دارو-1.webp"
-              alt="Resume"
-              class="hidden md:block"
-            />
-            <div>
-              <span
-                class="font-bold text-3xl text-lightviolet absolute left-0 top-8 md:-left-7"
-              >
-                >
-              </span>
-              <span
-                class="font-bold text-3xl text-lightviolet absolute right-0 top-8 md:-right-7"
-              >
-                <
-              </span>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/دانشگاه-شریف.webp"
+                  alt="Resume"
+                  class="max-sm:w-25"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/دانشگاه-ازاد.webp"
+                  alt="Resume"
+                  class="max-sm:w-25"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/پاکبان.webp"
+                  alt="Resume"
+                  class="max-sm:w-25"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/پارس-دارو-1.webp"
+                  alt="Resume"
+                  class="max-sm:w-25"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/دانشگاه-شهید-بهشتی.webp"
+                  alt="Resume"
+                  class="max-sm:w-25"
+                />
+              </div>
             </div>
-          </div>
-          <div
-            class="flex justify-center items-center gap-3 md:gap-4 lg:gap-5 mt-4"
-          >
-            <div class="bg-gray-300 rounded-full p-1"></div>
-            <div class="bg-gray-300 rounded-full p-1"></div>
-            <div class="bg-gray-300 rounded-full p-1"></div>
-            <div class="bg-gray-300 rounded-full p-1"></div>
-            <div class="bg-gray-300 rounded-full p-1"></div>
-            <div class="bg-gray-300 rounded-full p-1"></div>
-            <div class="bg-gray-300 rounded-full p-1"></div>
-            <div class="bg-gray-300 rounded-full p-1"></div>
-            <div class="bg-black rounded-full p-1"></div>
-            <div class="bg-gray-300 rounded-full p-1"></div>
-            <div class="bg-gray-300 rounded-full p-1"></div>
-            <div class="bg-gray-300 rounded-full p-1"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
         <div class="max-lg:hidden">
@@ -2023,6 +2138,48 @@
 
     <!-- Script Line -->
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+        autoplay: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper2", {
+        cssMode: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+        autoplay: true,
+      });
+    </script>
 
     <!-- Script Line -->
   </body>
