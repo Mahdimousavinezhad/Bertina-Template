@@ -608,6 +608,9 @@
   .gap-13 {
     gap: calc(var(--spacing) * 13);
   }
+  .gap-32 {
+    gap: calc(var(--spacing) * 32);
+  }
   .space-y-4 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -626,6 +629,9 @@
   }
   .gap-x-5 {
     column-gap: calc(var(--spacing) * 5);
+  }
+  .gap-y-4 {
+    row-gap: calc(var(--spacing) * 4);
   }
   .overflow-auto {
     overflow: auto;
@@ -777,6 +783,9 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -1011,6 +1020,31 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
+  .\*\:w-10 {
+    :is(& > *) {
+      width: calc(var(--spacing) * 10);
+    }
+  }
+  .\*\:w-20 {
+    :is(& > *) {
+      width: calc(var(--spacing) * 20);
+    }
+  }
+  .\*\:w-30 {
+    :is(& > *) {
+      width: calc(var(--spacing) * 30);
+    }
+  }
+  .\*\:w-40 {
+    :is(& > *) {
+      width: calc(var(--spacing) * 40);
+    }
+  }
+  .\*\:cursor-pointer {
+    :is(& > *) {
+      cursor: pointer;
+    }
+  }
   .group-hover\:block {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1188,6 +1222,15 @@
       }
     }
   }
+  .\*\:hover\:text-violet-400 {
+    :is(& > *) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-violet-400);
+        }
+      }
+    }
+  }
   .max-lg\:hidden {
     @media (width < 64rem) {
       display: none;
@@ -1252,6 +1295,11 @@
   .max-md\:flex-col {
     @media (width < 48rem) {
       flex-direction: column;
+    }
+  }
+  .max-md\:flex-wrap {
+    @media (width < 48rem) {
+      flex-wrap: wrap;
     }
   }
   .max-md\:items-center {
