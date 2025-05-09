@@ -39,3 +39,28 @@ toggle5.addEventListener("click", () => {
   const item5 = document.getElementById("item5");
   item5.classList.toggle("hidden");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const textElement = document.getElementById("slow_load");
+
+  const originalText = textElement.innerHTML;
+  textElement.innerHTML = "";
+
+  let i = 0;
+  const speed = 25;
+
+  function animateText() {
+    if (i < originalText.length) {
+      textElement.innerHTML =
+        originalText.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+      const delay = originalText.charAt(i) === "\n" ? speed * 3 : speed;
+      setTimeout(animateText, delay);
+      i++;
+    } else {
+      textElement.innerHTML = originalText;
+    }
+  }
+
+  setTimeout(animateText, 200);
+});
